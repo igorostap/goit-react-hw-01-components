@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import css from './Transactions.module.css'
-export default function TransactionHistory({ props }){
+export default function TransactionHistory({ props }) {
     return (
         <div>
           <table className={css.transactionHistory}>
@@ -12,8 +12,7 @@ export default function TransactionHistory({ props }){
     </tr>
   </thead>
 <tbody> 
-                {props.map(event => (
-                        
+                {props.map(event => (                  
                     <tr key={event.id}>
                  <td>{event.type}</td>
                  <td>{event.amount}</td>
