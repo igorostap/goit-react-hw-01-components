@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import css from './Transactions.module.css'
-
 export default function TransactionHistory({ props }){
     return (
         <div>
@@ -26,8 +25,7 @@ export default function TransactionHistory({ props }){
 </table>
         </div>
         
-                )
-}
+                )}
 TransactionHistory.propTypes=({
 props: PropTypes.array.isRequired,
 })
