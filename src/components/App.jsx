@@ -1,11 +1,11 @@
 import UserProfile from './UserPtofile/UserProfile'
 import TittleStat from './Statistics/StatisticsTittle';
-import user from './UserPtofile/user'
-import data from './Statistics/data'
+import user from './data/user'
+import data from './data/data'
 import Friendlist from './Friends/Friends';
-import friends from './Friends/friends'
+import friends from './data/friends'
 import TransactionHistory from './Transactions/Transactions';
-import items from './Transactions/transactions'
+import items from './data/transactions'
 export const App = () => {
   return (
     <div
@@ -23,9 +23,8 @@ export const App = () => {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes} />
+        stats={user.stats}
+         />
       <TittleStat
         tittle="tittle"
         stats={data} />
