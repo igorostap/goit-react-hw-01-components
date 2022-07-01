@@ -11,8 +11,7 @@ export default function TransactionHistory({ props }){
       <th>Currency</th>
     </tr>
   </thead>
-<tbody>
-  
+<tbody> 
                 {props.map(event => (
                         
                     <tr key={event.id}>
@@ -24,7 +23,6 @@ export default function TransactionHistory({ props }){
   </tbody>
 </table>
         </div>
-        
                 )}
 TransactionHistory.propTypes=({
 props: PropTypes.array.isRequired,
