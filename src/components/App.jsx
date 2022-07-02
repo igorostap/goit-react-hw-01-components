@@ -1,11 +1,11 @@
 import UserProfile from './UserPtofile/UserProfile'
 import TittleStat from './Statistics/StatisticsTittle';
-import user from './data/user'
-import data from './data/data'
+import user from 'data/user'
+import data from 'data/data'
 import Friendlist from './Friends/Friends';
-import friends from './data/friends'
+import friends from 'data/friends'
 import TransactionHistory from './Transactions/Transactions';
-import items from './data/transactions'
+import items from 'data/transactions'
 export const App = () => {
   return (
     <div
